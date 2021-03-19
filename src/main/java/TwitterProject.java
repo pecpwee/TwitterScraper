@@ -23,7 +23,7 @@ public class TwitterProject  {
 
     public static void main(String[] args) {
         ConfigurationBuilder cb = new ConfigurationBuilder();
-        cb.setDebugEnabled(true).setOAuthConsumerKey("OkXcNWZCRrssy3BH1sYI9HL9X").setOAuthConsumerSecret("m23KC1fc2eHqRQ1OI4bGDKC78Pvxpan4DeNFxEz0VTOy1ZneDi").setOAuthAccessToken("1350104481380315137-sjsQg5HG2LXAGTXYubWn6gaVtNfcY5").setOAuthAccessTokenSecret("Q2xGuVQGdGDjeqqncFUJwPO7MbqEvUly6zo5527MH1PM5");
+        cb.setDebugEnabled(true).setOAuthConsumerKey("YOUR CONSUMER KEY").setOAuthConsumerSecret("YOUR CONSUMER SECRET").setOAuthAccessToken("YOUR ACCESS TOKEN").setOAuthAccessTokenSecret("YOUR ACCESS TOKEN SECRETE");
         Twitter twitter = new TwitterFactory(cb.build()).getInstance();
         Query query = new Query("(css thread) OR (js thread)");
         int numberOfTweets = 512;
